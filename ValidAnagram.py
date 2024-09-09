@@ -4,7 +4,7 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        # Initialize dictionaries to count character frequencies
+        # Initialize dictionaries to count character frequencies, this are the hashmaps
         countS, countT = {}, {}
 
         # Count frequencies of each character in both strings
