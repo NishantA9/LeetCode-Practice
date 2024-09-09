@@ -1,5 +1,14 @@
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        
+        # #another method
+        # return Counter(s) == Counter(t)
+    
+        #a follow up question to solve it in O(1) space complexity
+        #do a sorting
+        # return sorted(s) == sorted(t)
+        
         # If lengths of the strings are not equal, they cannot be anagrams
         if len(s) != len(t):
             return False
