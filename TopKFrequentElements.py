@@ -3,7 +3,7 @@ from typing import List
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         #This is a bucket sort solution
-        # Initialize a dictionary to count the frequency of each number in nums
+        # Initialize a dictionary/hashmap to count the frequency of each number in nums
         count = {}
         
         # Initialize a list of empty lists, where the index represents the frequency
