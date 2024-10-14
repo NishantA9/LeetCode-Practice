@@ -39,7 +39,7 @@ class Solution1:
         # Set to track visited nodes.
         visited = set()
         
-        # Dictionary to keep track of parent nodes. Initially, the root's parent is None.
+        # Dictionary/hashmap to keep track of parent nodes. Initially, the root's parent is None.
         parent = {root: None}
         
         # Start iterating over the stack until it's empty.

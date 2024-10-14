@@ -13,7 +13,7 @@ class Solution:
         # Step 1: Precompute the minimum distance from every cell to the nearest dangerous cell
         def preCompute():
             q = deque()  # Queue for BFS
-            min_dist = {}  # Dictionary to store minimum distances
+            min_dist = {}  # Dictionary/HashMap to store minimum distances
             
             # Initialize BFS with all dangerous cells (cells with value 1)
             for r in range(N):
