@@ -9,8 +9,7 @@ class Solution:
         while i < len(words):
             # Check if adding the next word exceeds the maxWidth
             if length + len(line) + len(words[i]) > maxWidth:
-                # Calculate extra space needed for justification
-                extra_space = maxWidth - length
+                extra_space = maxWidth - length 
                 # Divide spaces evenly between words
                 spaces = extra_space // max(1, len(line) - 1)
                 # Handle any remainder spaces that need to be distributed from the left
@@ -23,11 +22,9 @@ class Solution:
                         line[j] += " "
                         remainder -= 1
 
-                # Join the line and add it to the result
-                res.append("".join(line))
-                # Reset line and length for the next line
-                line, length = [], 0
-            
+                res.append("".join(line)) # Join the line and add it to the result
+                line, length = [], 0 # Reset line and length for the next line
+
             # Add the current word to the line
             line.append(words[i])
             length += len(words[i])
@@ -37,5 +34,4 @@ class Solution:
         last_line = " ".join(line)
         trail_space = maxWidth - len(last_line)  # Calculate the trailing spaces to fill the line
         res.append(last_line + " " * trail_space)  # Append the last line with trailing spaces
-        
         return res  # Return the fully justified lines
