@@ -18,12 +18,12 @@ class Solution:
 
         # Count frequencies of each character in both strings
         for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countS[s[i]] = 1 + countS.get(s[i], 0) #get the value of the key, if it does not exist, return 0, this removes the key error
             countT[t[i]] = 1 + countT.get(t[i], 0)
 
         # Compare character frequencies
         for c in countS:
-            if countS[c] != countT.get(c, 0):
+            if countS[c] != countT.get(c, 0): #get the value of the key, if it does not exist, return 0, this removes the key error
                 return False
 
         return True
