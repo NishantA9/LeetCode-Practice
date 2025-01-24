@@ -4,19 +4,12 @@ class Solution:
         if x < 0:
             return False
         
-        # Initialize revNo to store the reversed number
-        revNo = 0
-        # Copy the value of x to temp for processing
-        temp = x
+        revNo = 0 # Initialize revNo to store the reversed number
+        temp = x  # Copy the value of x to temp for processing
 
         # Loop to reverse the digits of temp
         while temp != 0:
-            # Extract the last digit of temp
-            digit = temp % 10
-            # Update revNo by adding the extracted digit at the end
-            revNo = revNo * 10 + digit
-            # Remove the last digit from temp
-            temp //= 10
-        
-        # Check if the reversed number is equal to the original number
-        return revNo == x
+            digit = temp % 10 # Extract the last digit of temp
+            revNo = revNo * 10 + digit # Update revNo by adding the extracted digit at the end
+            temp //= 10 # Remove the last digit from temp
+        return revNo == x # Check if the reversed number is equal to the original number
