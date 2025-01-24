@@ -2,12 +2,9 @@ from typing import List
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        #This is a bucket sort solution
-        # Initialize a dictionary/hashmap to count the frequency of each number in nums
-        count = {}
+        count = {}  #This is a bucket sort solution, Initialize a dictionary/hashmap to count the frequency of each number in nums
         
-        # Initialize a list of empty lists, where the index represents the frequency
-        # The list is sized len(nums) + 1 because the max frequency a number can have is len(nums)
+        # Initialize a list of empty lists, where the index represents the frequency, The list is sized len(nums) + 1 because the max frequency a number can have is len(nums)
         freq = [[] for i in range(len(nums) + 1)]
         
         # Count the frequency of each number in nums
@@ -18,8 +15,7 @@ class Solution:
         for n, c in count.items():
             freq[c].append(n)  # Append the number n to the list at index c
         
-        # Initialize the result list to store the top k frequent elements
-        res = []
+        res = [] # Initialize the result list to store the top k frequent elements
         
         # Iterate over the freq list in reverse order (from highest to lowest frequency)
         for i in range(len(freq) - 1, 0, -1):
