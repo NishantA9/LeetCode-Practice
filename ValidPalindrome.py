@@ -1,6 +1,5 @@
 #What is palindrome?
 #A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.
-
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         # Create a new string to hold only alphanumeric characters
@@ -11,8 +10,7 @@ class Solution:
             if c.isalnum():  # Check if the character is alphanumeric (letter or number)
                 newStr += c.lower()  # Convert to lowercase and add to newStr
         
-        # Check if the cleaned string is equal to its reverse
-        # This checks if the string is a palindrome
+        # Check if the cleaned string is equal to its reverse, This checks if the string is a palindrome
         return newStr == newStr[::-1]  # newStr[::-1] creates a reversed version of newStr
 
 
@@ -37,8 +35,7 @@ class Solution1:
             if s[l].lower() != s[r].lower():
                 return False  # If they are not the same, it's not a palindrome
             
-            # Move the pointers closer towards the center
-            l, r = l + 1, r - 1  # noqa: E741
+            l, r = l + 1, r - 1  # Move the pointers closer towards the center # noqa: E741
         
         return True  # If no mismatches are found, the string is a palindrome
     
