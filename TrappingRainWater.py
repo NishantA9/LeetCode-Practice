@@ -11,9 +11,8 @@ class Solution:
 
         # Iterate as long as the left pointer is less than the right pointer.
         while l < r:
-            # If the maximum height on the left side is smaller than on the right side,move the left pointer to the right.
             if leftMax < rightMax:
-                l += 1  # Move the left pointer rightward  # noqa: E741
+                l += 1  #             # If the maximum height on the left side is smaller than on the right side,move the left pointer to the right. Move the left pointer rightward  # noqa: E741
                 leftMax = max(leftMax, height[l])# Update the leftMax to the larger of the current leftMax and the new height at 'l'.
                 res += leftMax - height[l] # Add the water trapped at the current position (difference between leftMax and current height).
             else:
