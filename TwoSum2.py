@@ -1,9 +1,7 @@
 from typing import List
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        # Initialize two pointers:
-        # 'l' is the left pointer, starting from the beginning of the list
-        # 'r' is the right pointer, starting from the end of the list
+        # Initialize two pointers: # 'l' is the left pointer, starting from the beginning of the list # 'r' is the right pointer, starting from the end of the list
         l, r = 0, len(numbers) - 1  # noqa: E741
         
         # Continue the loop until the two pointers meet
@@ -25,5 +23,4 @@ class Solution:
             else:
                 return [l + 1, r + 1]  # Add 1 to both 'l' and 'r' to convert 0-based to 1-based indexing
         
-        # If no solution is found (though the problem guarantees one solution), return an empty list
-        return []
+        return []# If no solution is found (though the problem guarantees one solution), return an empty list
