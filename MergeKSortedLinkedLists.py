@@ -9,11 +9,9 @@ class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         """ Merges k sorted linked lists into one sorted linked list using a divide and conquer approach. :param lists: List of ListNode objects representing k sorted linked lists. :return: A single sorted linked list merged from all input lists."""
         if not lists or len(lists) == 0:         # If the input list is empty, return None
-            return None 
-        
+            return None  
         while len(lists) > 1:  # Repeatedly merge pairs of lists until only one merged list remains
-            mergedLists = []  # Temporary list to store merged pairs
-            
+            mergedLists = []  # Temporary list to store merged pairs     
             for i in range(0, len(lists), 2):  # Iterate over the list in steps of 2, merging pairs of lists
                 l1 = lists[i]
                 l2 = lists[i+1] if (i+1) < len(lists) else None  # Ensure we don't go out of bounds
