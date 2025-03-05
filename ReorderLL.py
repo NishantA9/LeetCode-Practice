@@ -32,7 +32,6 @@ class Solution:
 
         # Step 3: Merge the two halves
         first, second = head, prev  # `second` is now the reversed half
-
         while second:  # While there are nodes in the second half
             tmp1, tmp2 = first.next, second.next  # Save next nodes
             first.next = second  # Connect first node to a node from the reversed half
