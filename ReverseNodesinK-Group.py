@@ -4,13 +4,12 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-        
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)  # Dummy node to simplify edge cases
         groupPrev = dummy  # Pointer to track the previous group's last node
         while True:
-            kth = self.getKth(groupPrev, k)            # Find the k-th node from groupPrev
+            kth = self.getKth(groupPrev, k) # Find the k-th node from groupPrev
             if not kth:  # If fewer than k nodes remain, stop reversing
                 break
             groupNext = kth.next  # Store next group's starting node
