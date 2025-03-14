@@ -14,5 +14,4 @@ class Solution:
             if not (left < node.val < right): # Check if the current node value violates the BST property
                 return False  # Invalid BST
             return (valid(node.left, left, node.val) and valid(node.right, node.val, right)) # Recursively check left and right subtrees
-        # Start the recursion with infinite bounds
-        return valid(root, float("-inf"), float("inf"))
+        return valid(root, float("-inf"), float("inf"))  # Start the recursion with infinite bounds
