@@ -21,4 +21,4 @@ class MedianFinder:
             return -1 * self.small[0]
         if len(self.large) > len(self.small):
             return self.large[0]
-        return (-1 * self.small[0] + self.large[0]) / 2         # If equal size, return average of tops
+        return (-1 * self.small[0] + self.large[0]) / 2 # If equal size, return average of tops
