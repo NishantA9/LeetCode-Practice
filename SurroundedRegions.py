@@ -6,8 +6,7 @@ class Solution:
             if (r < 0 or c < 0 or r == ROWS or c == COLS or board[r][c] != "O"):  # Stop DFS if out of bounds or current cell is not 'O'
                 return
             board[r][c] = "T"  # Temporarily mark as safe
-            # Explore in all 4 directions
-            capture(r + 1, c)
+            capture(r + 1, c)            # Explore in all 4 directions= up, down, left, right
             capture(r - 1, c)
             capture(r, c + 1)
             capture(r, c - 1)
