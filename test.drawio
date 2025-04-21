@@ -1,0 +1,86 @@
+<mxfile host="65bd71144e">
+    <diagram id="U-sYc6tJjAt6tgtIyvhN" name="Page-1">
+        <mxGraphModel dx="1459" dy="820" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;248&quot; data-start=&quot;200&quot;&gt;&lt;td data-end=&quot;248&quot; data-start=&quot;204&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;h3&gt;&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Start Local DFX Replica (First Terminal)&lt;/font&gt;&lt;/b&gt;&lt;/h3&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;304&quot; data-start=&quot;249&quot;&gt;&lt;td data-end=&quot;253&quot; data-start=&quot;249&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="176" y="286" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="704" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;248&quot; data-start=&quot;200&quot;&gt;&lt;td data-end=&quot;248&quot; data-start=&quot;204&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;h3&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;304&quot; data-start=&quot;249&quot;&gt;&lt;td data-end=&quot;304&quot; data-start=&quot;253&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)] min-w-[calc(var(--thread-content-max-width)/3)]&quot;&gt;&lt;h4&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Install Frontend Dependencies (Second Terminal)&lt;/font&gt;&lt;/h4&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;332&quot; data-start=&quot;305&quot;&gt;&lt;td data-end=&quot;309&quot; data-start=&quot;305&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;304&quot; data-start=&quot;249&quot;&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h3&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="286" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;332&quot; data-start=&quot;305&quot;&gt;&lt;td data-end=&quot;332&quot; data-start=&quot;309&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Times New Roman&quot;&gt;Run Frontend Server&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;382&quot; data-start=&quot;333&quot;&gt;&lt;td data-end=&quot;337&quot; data-start=&quot;333&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="707" y="286" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;h4&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Times New Roman&quot;&gt;Deploy Motoko&lt;br&gt;&amp;nbsp;Canisters&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;(Smart Contracts)&lt;/span&gt;&lt;/font&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="979" y="286" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h4&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;Retrieve Principal ID&lt;/font&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="450" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;453&quot; data-start=&quot;413&quot;&gt;&lt;td data-end=&quot;453&quot; data-start=&quot;417&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;h4&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;Mint Sample NFT via Command Line&lt;/font&gt;&lt;/h4&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;503&quot; data-start=&quot;454&quot;&gt;&lt;td data-end=&quot;458&quot; data-start=&quot;454&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="707" y="450" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;413&quot; data-end=&quot;453&quot;&gt;&lt;td class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot; data-start=&quot;417&quot; data-end=&quot;453&quot;&gt;&lt;h4&gt;&lt;/h4&gt;&lt;h4&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;Open Marketplace at http://localhost:8080&lt;/font&gt;&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;454&quot; data-end=&quot;503&quot;&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="450" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;h4&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;Query NFT Details (Name, Owner, Asset)&lt;/font&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="176" y="450" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;576&quot; data-start=&quot;551&quot;&gt;&lt;td data-end=&quot;576&quot; data-start=&quot;555&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;h4&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;List NFT for Sale&lt;/font&gt;&lt;/h4&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;608&quot; data-start=&quot;577&quot;&gt;&lt;td data-end=&quot;582&quot; data-start=&quot;577&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="176" y="616" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;" edge="1" parent="1" source="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="704" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;608&quot; data-start=&quot;577&quot;&gt;&lt;td data-end=&quot;608&quot; data-start=&quot;582&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;h4&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Times New Roman&quot;&gt;Transfer NFT Ownership&lt;/font&gt;&lt;/h4&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;664&quot; data-start=&quot;609&quot;&gt;&lt;td data-end=&quot;614&quot; data-start=&quot;609&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="616" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="17" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;664&quot; data-start=&quot;609&quot;&gt;&lt;td data-end=&quot;664&quot; data-start=&quot;614&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)] min-w-[calc(var(--thread-content-max-width)/3)]&quot;&gt;&lt;h4&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Times New Roman&quot;&gt;View Personal NFT Collection (My NFTs Section)&lt;/font&gt;&lt;/h4&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;732&quot; data-start=&quot;665&quot;&gt;&lt;td data-end=&quot;670&quot; data-start=&quot;665&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="706.5" y="616" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;h4&gt;&lt;div class=&quot;group pointer-events-none relative flex justify-center *:pointer-events-auto&quot;&gt;&lt;h4&gt;&lt;table data-end=&quot;732&quot; data-start=&quot;158&quot; class=&quot;min-w-full&quot;&gt;&lt;tbody data-end=&quot;732&quot; data-start=&quot;200&quot;&gt;&lt;tr data-end=&quot;732&quot; data-start=&quot;665&quot;&gt;&lt;td data-end=&quot;732&quot; data-start=&quot;670&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)] min-w-[calc(var(--thread-content-max-width)/3)]&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;Explore Newly Minted and Trending NFTs (Discovery Gallery)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="616" width="187" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;entryX=0.442;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;h2&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Times New Roman&quot;&gt;Workflow Diagram:&amp;nbsp;&lt;span style=&quot;line-height: 115%; color: black;&quot;&gt;Crypto Miners – A&lt;br&gt;Decentralized NFT Marketplace on Internet Computer&lt;/span&gt;&amp;nbsp;&lt;/font&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="506" y="726" width="407" height="88" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
