@@ -2,7 +2,7 @@ from typing import List
 from collections import defaultdict
 class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
-        dp = defaultdict(int)
+        dp = defaultdict(int) #hashmap initialization
         dp[0] = 1  # Base case: 1 way to reach 0
         for num in nums:
             nextDp = defaultdict(int)
