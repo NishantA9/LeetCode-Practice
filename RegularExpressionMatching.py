@@ -16,6 +16,6 @@ class Solution:
             if match:   # If characters match normally, continue
                 cache[(i, j)] = dfs(i + 1, j + 1)
                 return cache[(i, j)]
-            cache[(i, j)] = False            # If no match
+            cache[(i, j)] = False # If no match
             return False
         return dfs(0, 0)
