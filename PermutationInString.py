@@ -1,5 +1,24 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):  # If s1 is longer than s2, no permutation is possible
+            return False
+        s1count, s2count = {}, {}  # Frequency maps for s1 and the current window in s2
+        for i in range(len(s1)):  # Build frequency maps for s1 and the first window in s2
+            s1count[s1[i]] = 1 + s1count.get(s1[i], 0)  # Count s1 characters
+            s2count[s2[i]] = 1 + s2count.get(s2[i], 0)  # Count first window of s2
+        for r in range(len(s1), len(s2)):  # Slide the window across s2
+            if s1count == s2count:  # If current window matches s1's frequency, it's a valid permutation
+                return True
+            s2count[s2[r]] = 1 + s2count.get(s2[r], 0)  # Add the new character at the right end of the window
+            l = s2[r - len(s1)]  # Character that's sliding out from the left end  # noqa: E741
+            s2count[l] -= 1  # Decrease count of that character
+            if s2count[l] == 0:  # If its count becomes 0, remove it from the map
+                del s2count[l]
+        return s1count == s2count  # Final check for the last window
+
+#---------------------------------------------------------------------------------------------------
+class Solution2:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
         if len(s1) > len(s2):
             return False  # Edge case # If s1 is longer than s2, it is impossible for s1's permutation to exist in s2
         s1Count, s2Count = [0] * 26, [0] * 26 # Initialize frequency counts for both strings Using arrays of size 26 to represent character counts for 'a' to 'z'
