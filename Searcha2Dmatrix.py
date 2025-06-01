@@ -12,10 +12,8 @@ class Solution:
                 bot = row - 1
             else: # Target lies within this row
                 break
-        
         if not (top <= bot):  # If we can't find a valid row
             return False
-        
         row = (top + bot) // 2  # Identify the target row
         l, r = 0, COLS - 1 # Binary search within the identified row  # noqa: E741
         while l <= r:
@@ -27,3 +25,12 @@ class Solution:
             else:
                 return True  # Target found
         return False  # Target not found
+
+# ==================
+class Solution2:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        for r in range(len(matrix)):
+            for c in range(len(matrix[0])):
+                if matrix[r][c] == target:
+                    return True
+        return False
