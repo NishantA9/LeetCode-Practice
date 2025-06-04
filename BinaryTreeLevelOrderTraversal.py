@@ -24,3 +24,19 @@ class Solution:
             if level:  
                 res.append(level)  # Add the current level to the result
         return res  # Return the level order traversal result
+
+#---------------------------------------------------------------------------------------------------        
+#DFS solution
+class SolutionDFS:
+        def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+            res = [] 
+            def dfs(node,depth):
+                if not node: # Base case: if the node is None, return
+                    return None
+                if len(res) == depth: # If we're at a new depth, add a new list to res
+                    res.append([])
+                res[depth].append(node.val) # Append the current node's value to its depth level
+                dfs(node.left, depth + 1) # Traverse the left and right subtrees with increased depth
+                dfs(node.right, depth + 1)
+                dfs(root,0) # Start DFS from root at depth 0
+            return res 

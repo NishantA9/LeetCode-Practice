@@ -23,3 +23,18 @@ class Solution:
             if rightSide:
                 res.append(rightSide.val)  # Add last node of level to result
         return res  # Return the right-side view of the tree
+
+#---------------------------------------------------------------------------------------------------    
+#DFS solution
+class SolutionDFS:
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+        def dfs(node, depth):
+            if not node: # Base case: if the current node is None, return
+                return None
+            if depth == len(res):# If this is the first node we're visiting at this depth, it's the rightmost one (because we visit right first)
+                res.append(node.val)
+            dfs(node.right, depth + 1) # First go right (to catch rightmost nodes first)
+            dfs(node.left, depth + 1)# Then go left
+        dfs(root, 0)
+        return res
