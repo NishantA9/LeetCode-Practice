@@ -7,6 +7,7 @@ class Solution:
     # Hashmap approach to find elements appearing more than n/3 times
     def majorityElement(self, nums: List[int]) -> List[int]:
         count = {}  # Dictionary to store frequency of each number
+        # count = Counter(nums) # this will skip the first for loop
         res = []    # List to store result
         for num in nums:
             count[num] = 1 + count.get(num,0)  # Count occurrences
