@@ -43,3 +43,24 @@ class Solution:
             return False
 
         return backtrack(0, k, 0)
+
+        def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+            if sum(nums) % k != 0:   # Check if total sum is divisible by k (requirement for equal partitions)
+                return False                
+            nums.sort(reverse=True)  # Sort in descending order for better pruning (try larger numbers first)
+            target = sum(nums) // k             # Target sum for each subset
+            used = [False] * len(nums)             # Track which numbers are used in partitions            
+            def backtrack(i: int, k: int, subsetSum: int) -> bool:
+                if k == 0:  # Base case: all k subsets are formed
+                    return True                  
+                if subsetSum == target:                 # Current subset is complete, start a new one
+                    return backtrack(0, k - 1, 0)                    
+                for j in range(i, len(nums)):  # Try each number starting from index i
+                    if used[j] or subsetSum + nums[j] > target: # Skip if number is used or would exceed target
+                        continue             
+                    used[j] = True                   # Try using this number
+                    if backtrack(j + 1, k, subsetSum + nums[j]):
+                        return True                    
+                    used[j] = False # Backtrack by un-using the number                                    
+                return False # No valid partition found using current numbers               
+            return backtrack(0, k, 0) # Start with k subsets to fill, from index 0
