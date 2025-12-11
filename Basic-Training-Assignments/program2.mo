@@ -2,7 +2,7 @@ import Array "mo:base/Array";
 import List "mo:base/List";
 import Nat "mo:base/Nat";
 
-actor Program2 {
+persistent actor Program2 {
     // Program 2: Data Structures and Control Structures
     public func showcaseDataStructuresAndControl() : async Text {
         // Array
