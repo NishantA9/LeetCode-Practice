@@ -1,0 +1,9 @@
+-- SQL Lesson 14: Updating rows Exercise 14 — Tasks
+-- The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+Update movies set Director = 'John Lasseter' where Id = 2;
+
+-- The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+Update movies set Year = 1999 where Id = 3;
+
+-- Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+Update movies set Title = "Toy Story 3", Director = "Lee Unkrich" where Id = 11;
