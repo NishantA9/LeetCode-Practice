@@ -1,18 +1,9 @@
-#Two Pointers 
 from typing import List
-class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        # Initialize the left pointer to 1 (first element is always unique)
-        l = 1
-        
-        # Iterate through the list starting from the second element (index 1)
-        for r in range(1, len(nums)):
-            # Check if the current element is different from the previous one
-            if nums[r] != nums[r - 1]:
-                # If different, assign the current element to the position at 'l'
-                nums[l] = nums[r]
-                # Increment the left pointer
-                l += 1
-        
-        # Return the count of unique elements, which is the value of 'l'
-        return l
+class Solution: #Two Pointers 
+    def removeDuplicates(self, nums: List[int]) -> int:       
+        l = 1   # Initialize the left pointer to 1 (first element is always unique) # noqa: E741                
+        for r in range(1, len(nums)): # Iterate through the list starting from the second element (index 1)            
+            if nums[r] != nums[r - 1]: # Check if the current element is different from the previous one             
+                nums[l] = nums[r] # If different, assign the current element to the position at 'l'                
+                l += 1 # Increment the left pointer                
+        return l # Return the count of unique elements, which is the value of 'l'

@@ -1,4 +1,3 @@
-
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         i, j = 0, 0  # Initialize pointers for both words
