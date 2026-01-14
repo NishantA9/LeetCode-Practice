@@ -1,5 +1,4 @@
-from typing import List
-#the below sol uses a hashmap to store the count of each element in the list which uses O(n) space and O(n) time
+from typing import List #the below sol uses a hashmap to store the count of each element in the list which uses O(n) space and O(n) time
 class Solution1:
     def majorityE1ement1(se1f, nums : List [int]) -> int:
         count = {}  # Dictionary to store frequency of each number
@@ -10,6 +9,15 @@ class Solution1:
                 res = n
                 maxCount = count[n]
         return res  # Return the number that appears more than ⌊n / 2⌋ times
+    
+class Solution(object):
+    def majorityElement(self, nums):
+        count = {}  # Dictionary to store frequency of each number
+        for n in nums:  # Iterate through each number in the list
+            count[n] = 1 + count.get(n, 0)  # Increment the count for the current number
+        for n in count:  # Iterate through the unique numbers
+            if count[n] > len(nums) // 2:  # Check if count exceeds half the list length
+                return n  # Return the majority element
 
 #---------------------------------------------------------------
 
