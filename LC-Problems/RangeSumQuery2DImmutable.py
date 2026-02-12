@@ -1,6 +1,5 @@
 # brute force -> TLE on LC
 class NumMatrix:
-
     def __init__(self, matrix: list[list[int]]):
         self.matrix = matrix  # Store the input matrix
 
@@ -14,7 +13,6 @@ class NumMatrix:
 # another solution -> Acceptable on LC, Optimal O(1) Space
 
 class NumMatrix2:
-
     def __init__(self, matrix: list[list[int]]):
         ROWS, COLS = len(matrix), len(matrix[0])  # Get number of rows and columns
         self.sumMat = [[0] * (COLS + 1) for r in range(ROWS + 1)]  # Create prefix sum matrix
